@@ -1,19 +1,12 @@
-print("hello world")
 
-a = float(input("Перше число: "))
-b = float(input("Друге число: "))
-op = input("Операція (+, -, *, /): ")
+class Calculator:
+    def __init__(self, first, second):
+        self.first = first
+        self.second = second
 
-if op == "+":
-    print("Результат:", a + b)
-elif op == "-":
-    print("Результат:", a - b)
-elif op == "*":
-    print("Результат:", a * b)
-elif op == "/":
-    if b != 0:
-        print("Результат:", a / b)
-    else:
-        print("Помилка: ділення на нуль!")
-else:
-    print("Невідома операція")
+    def plus(self):
+        suma = self.first + self.second
+        print(suma)
+
+calculator = Calculator(first = 5, second = 2)
+calculator.plus()
