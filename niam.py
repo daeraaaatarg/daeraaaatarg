@@ -37,7 +37,7 @@ class Calculator:
             x1 = (-b + math.sqrt(discriminat)) / 2*a
             x2 = (-b - math.sqrt(discriminat)) / 2*a
             print(f"First one: {x1}")
-            print(f"First one: {x2}")
+            print(f"Second one: {x2}")
 
         if a == 1:
             viet_plus = x1 + x2
